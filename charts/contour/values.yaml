@@ -1,0 +1,4 @@
+envoy:
+  service:
+    annotations: {}
+      # service.beta.kubernetes.io/azure-pip-name: "59c6ad40-fa80-41c3-a155-3b4b1cd44f9f"
