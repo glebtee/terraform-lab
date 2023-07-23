@@ -1,0 +1,12 @@
+name: Say Hello To the World
+
+on:
+  push:
+    branches: ["master"]
+
+jobs:
+  say-hello:
+    runs-on: ["self-hosted", "Linux"]
+
+    steps:
+      - run: echo "Hello, world, from my first k8s runner!"
