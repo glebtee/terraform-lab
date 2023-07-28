@@ -10,7 +10,10 @@ locals {
 }
 
 resource "helm_release" "this" {
-  for_each = local.charts
+  for_each = {
+    for k, v in local.charts : k => v
+    if try(v.enabled, true)
+  }
 
   name                       = try(each.value.name)
   chart                      = try(each.value.chart)

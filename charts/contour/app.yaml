@@ -5,3 +5,5 @@ version: "12.1.1"
 namespace: projectcontour
 
 create_namespace: true
+
+enabled: false

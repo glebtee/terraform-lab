@@ -1,7 +1,7 @@
 name: actions-runner-controller
-repository: https://github.com/actions-runner-controller
+repository: https://actions-runner-controller.github.io/actions-runner-controller
 chart: actions-runner-controller
-version: "v0.27.4"
+version: "0.23.3"
 namespace: actions-runner-controller
 
 create_namespace: true
