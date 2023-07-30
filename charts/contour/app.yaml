@@ -6,4 +6,4 @@ namespace: projectcontour
 
 create_namespace: true
 
-enabled: false
+enabled: true

@@ -5,3 +5,4 @@ version: "0.23.3"
 namespace: actions-runner-controller
 
 create_namespace: true
+enabled: false

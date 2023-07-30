@@ -2,7 +2,7 @@
 
 resource "azurerm_resource_group" "main" {
   name     = "glebops"
-  location = "North Europe"
+  location = "Switzerland North"
 
   tags = var.common_tags
 }
@@ -15,8 +15,8 @@ resource "azurerm_kubernetes_cluster" "main" {
 
   default_node_pool {
     name       = "main"
-    node_count = 1
-    vm_size    = "standard_b2s"
+    node_count = 2
+    vm_size    = "standard_D2s_v3"
     os_disk_size_gb = 32
     os_sku = "AzureLinux"
   }
